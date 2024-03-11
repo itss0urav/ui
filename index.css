@@ -1,0 +1,115 @@
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  transition: background-color 0.5s ease;
+  background: linear-gradient(90deg, #c4c6c6 0%, hsl(222, 54%, 88%) 100%);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1 {
+  text-align: center;
+  padding: 20px;
+  font-size: 2.5em;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+.toggle-view {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.toggle-view button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background: #004e92;
+  color: white;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.5s ease;
+}
+
+.toggle-view button:hover {
+  background: #0073e6;
+}
+
+#grid-btn,
+#list-btn {
+  display: block;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  background: #1b2758;
+  color: white;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.5s ease;
+}
+
+#grid-btn:hover,
+#list-btn:hover {
+  background: #2e3f80;
+}
+
+#menu.grid-view {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  list-style-type: none;
+}
+
+#menu.grid-view li {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 10px;
+  border-radius: 5px;
+  transition: background-color 0.5s ease;
+}
+
+#menu.grid-view li:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+#menu.list-view {
+  list-style-type: none;
+  padding: 20px;
+}
+
+#menu.list-view li {
+  margin-bottom: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 10px;
+  border-radius: 5px;
+  transition: background-color 0.5s ease;
+}
+
+#menu.list-view li:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+body.night-mode {
+  background: linear-gradient(9deg, #000000 0%, #0e0e0e 50%, #000000 100%);
+  color: #fff;
+}
+
+#dark-mode-btn {
+  display: block;
+  border: none;
+  border-radius: 5px;
+  background: #0e0e0e;
+  color: #fff;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.5s ease;
+}
+
+#dark-mode-btn:hover {
+  background: #1c1c1c;
+}
